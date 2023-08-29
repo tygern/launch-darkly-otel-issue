@@ -1,0 +1,32 @@
+{
+	"flags": {
+		"say-hello": {
+			"key": "say-hello",
+			"on": true,
+			"prerequisites": [],
+			"targets": [],
+			"contextTargets": [],
+			"rules": [],
+			"fallthrough": {
+				"variation": 0
+			},
+			"offVariation": 1,
+			"variations": [
+				true,
+				false
+			],
+			"clientSideAvailability": {
+				"usingMobileKey": false,
+				"usingEnvironmentId": false
+			},
+			"clientSide": false,
+			"salt": "99999999999999999999999999999999",
+			"trackEvents": false,
+			"trackEventsFallthrough": false,
+			"debugEventsUntilDate": null,
+			"version": 5,
+			"deleted": false
+		}
+	},
+	"segments": {}
+}
