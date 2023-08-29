@@ -12,6 +12,7 @@
     "wrangler": "^3.0.0"
   },
   "dependencies": {
-    "@launchdarkly/cloudflare-server-sdk": "^2.1.3"
+    "@launchdarkly/cloudflare-server-sdk": "^2.1.3",
+    "@microlabs/otel-cf-workers": "^1.0.0-rc.7"
   }
 }
