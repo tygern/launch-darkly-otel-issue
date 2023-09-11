@@ -1,5 +1,5 @@
 import { init } from '@launchdarkly/cloudflare-server-sdk';
-import { BatchTraceSpanProcessor, instrument } from '@microlabs/otel-cf-workers';
+import { instrument } from '@microlabs/otel-cf-workers';
 import { ConsoleSpanExporter } from '@opentelemetry/sdk-trace-base';
 
 export interface Env {
@@ -27,5 +27,4 @@ export const handler = {
 export default instrument(handler, {
 	exporter: new ConsoleSpanExporter(),
 	service: { name: "launch-darkly-otel-issue" },
-	spanProcessors: new BatchTraceSpanProcessor(),
 })
